@@ -4,8 +4,10 @@ import com.azure.spring.data.cosmos.repository.CosmosRepository;
 import com.study.relationship.gateway.db.entity.RelationshipEntity;
 import org.springframework.stereotype.Repository;
 
+import java.util.Optional;
+
 @Repository
 public interface IRelationshipRepository extends CosmosRepository<RelationshipEntity, String> {
 
-    RelationshipEntity findByCustomerId(String customerId);
+    Optional<RelationshipEntity> findByCustomerId(String customerId);
 }

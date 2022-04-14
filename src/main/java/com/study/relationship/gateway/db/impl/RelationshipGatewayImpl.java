@@ -1,9 +1,10 @@
-package com.study.relationship.gateway.db.repository.impl;
+package com.study.relationship.gateway.db.impl;
 
 import com.study.relationship.gateway.IRelationshipGateway;
-import com.study.relationship.gateway.db.entity.RelationshipEntity;
 import com.study.relationship.gateway.db.repository.IRelationshipRepository;
+import com.study.relationship.usecase.data.RelationshipUseCaseData;
 import lombok.RequiredArgsConstructor;
+import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
 
 import java.util.Optional;
@@ -12,13 +13,15 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class RelationshipGatewayImpl implements IRelationshipGateway {
 
+    private final ModelMapper modelMapper;
+
     private final IRelationshipRepository repository;
 
     @Override
-    public Optional findByCustomerId(String customerId) {
+    public Optional<RelationshipUseCaseData> findByCustomerId(String customerId) {
 
-        RelationshipEntity customer = repository.findByCustomerId(customerId);
+        return repository.findByCustomerId(customerId)
+                .map(s -> modelMapper.map(s, RelationshipUseCaseData.class));
 
-        return Optional.empty();
     }
 }

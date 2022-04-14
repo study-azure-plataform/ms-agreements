@@ -14,5 +14,5 @@ This microservice is the customer's relationship with contracted products or ser
 #### Azure Spring Data CosmosDB
 
 You need an Azure portal account and a CosmosDB instance.
-In the configuration **application.yml** file fill in the **uri** / **key**.
+In the configuration **application.yml** file fill in the **uri** and **key**.
 This configuration will give access to the cosmosDB instance by the application.

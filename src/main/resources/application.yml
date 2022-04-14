@@ -10,12 +10,6 @@ azure:
     uri: https://brstudents-pucsp001.documents.azure.com:443/
     key: R1YXjA1tRFp9eSIy1ulwicjSHpZp6vwrFxpy6nTSjda6SOgDt4EJfaou3ebdkE7dQkNF93Y4QtwDdp5Qq5kWaQ==
     database: DB-RELATIONSHIP
-    populate-query-metrics: true
+    populate-query-metrics: false
 
-#azure:
-#  cosmosdb:
-#    uri: https://brstudents-pucsp001.documents.azure.com:443/
-#    key: R1YXjA1tRFp9eSIy1ulwicjSHpZp6vwrFxpy6nTSjda6SOgDt4EJfaou3ebdkE7dQkNF93Y4QtwDdp5Qq5kWaQ==
-#    database: DB-RELATIONSHIP
-#    populate-query-metrics: true
 

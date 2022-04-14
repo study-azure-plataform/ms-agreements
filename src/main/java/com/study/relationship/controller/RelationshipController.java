@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Optional;
+
 @RestController
 @RequiredArgsConstructor
 @RequestMapping(path = "/v1/relationship", produces = MediaType.APPLICATION_JSON_VALUE)
@@ -18,7 +20,7 @@ public class RelationshipController {
     private final RelationshipUseCase useCase;
 
     @GetMapping("/customerId/{customerId}")
-    public ResponseEntity<RelationshipResponse> findByCustomerId(@PathVariable String customerId){
+    public ResponseEntity<Optional<RelationshipResponse>> findByCustomerId(@PathVariable String customerId){
         return ResponseEntity.ok(useCase.findByRelationship(customerId));
     }
 }

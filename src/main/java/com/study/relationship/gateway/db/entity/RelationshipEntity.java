@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 
+import java.util.List;
+
 @Data
 @Builder
 @Container(containerName = "relationship", ru = "400")
@@ -16,5 +18,7 @@ public class RelationshipEntity {
 
     @PartitionKey
     private String customerId;
+
+    private List<DetailEntity> details;
 
 }
