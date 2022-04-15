@@ -10,7 +10,7 @@ import java.util.List;
 
 @Data
 @Builder
-@Container(containerName = "relationship", ru = "400")
+@Container(containerName = "relationship")
 public class RelationshipEntity {
 
     @Id
