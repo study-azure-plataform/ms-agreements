@@ -1,8 +1,8 @@
-# Microservice for Relationship Customer with Azure CosmosDB
+# Microservice for Customer Agreements with Azure CosmosDB
 
 ### Description
 
-This microservice is the customer's agreements with contracted products or services.
+This microservice is the customer agreement with contracted products or services.
 
 #### Get Started
 
