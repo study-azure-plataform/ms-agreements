@@ -2,7 +2,7 @@
 
 ### Description
 
-This microservice is the customer's relationship with contracted products or services.
+This microservice is the customer's agreements with contracted products or services.
 
 #### Get Started
 

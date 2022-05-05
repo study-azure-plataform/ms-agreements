@@ -7,7 +7,7 @@ plugins {
 group = 'com.study'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
-description ='Microservice for Customer Relationship with CosmosDB'
+description ='Microservice for Customer Agreements with CosmosDB'
 
 configurations {
     compileOnly {
